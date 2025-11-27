@@ -1,0 +1,661 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=rfCs9FvakwNRGyYd0Yv5fETkM8cQqkR_-zYly7ZgoiVP8ldL8vH5N2cZdxawnqIv1N00JrQfiIcGOTHNAETX-qUF1REFQ73KEaStqMmpIW8f4C034hNf1xneJpm9DeMBcotayY1l86qvDO4JvQCEoob5Qy41HgedvIkzaFZawkan7Z5wuch21mtOyoCoCTJCI8jGCPbzctenMf5k5nI65wUjjrThfB0ceR0sneKhBBBE_MEKsfLVyjhce_9fN0AwhNl4dVerL4bEswNltT5guP8Fzw7fv8ui-olVEpGVgSI6-yGizP-QICFHZa62WOOu1CrHRDMbqGmZ0EAdb56pNN4RVzDZpgeBOWBbEO9ycrdqxV12gm5sadmAvVhJW9oxMnjn9IVtc0ZIwiDH_-SMoEhQcS3FYygWhLw9wmgKiAjb9pszHHRgpl11w09Xvn9akGFGvmW_0r5Yuq1_RH8VYivnNHDI9xEw2H65Vw7o1KByaF9_GHZ5OkzZcbYTQVAyBMZjWzrlKBzc9CKh-8Ga0vrthcNkTrQfjBgbSDtEn6m8VwnJ5HqbE5AoupC0kXdrGq44ZX91QtvN7tlSGLqPF2nRacoWvSZB_yd8PzTErD6zCZyMW7CNJwmrJc2DFu9BMBikfA50NIOJqOMDsynQvq3_5MB5g13hxyPXinVAdVoIAfaOUZKuNUs56kbupVCshVBzuBTHv1GKAaitGh7DLSAlc86h_UnzjN5UjJh0XqSfQh9fONzGPBsvw6mBGzswn3Z1kpHnWoJIHSeuu-kXU2WPBVLZAwMU8fcUk73T-x1L012FDXX0qDVJJkEeOiG1xAFj-0DZ_CiigDncl9dTwA40FivOL1GgiAf5ldgR0x9gD9w1Lwgil6eagfbCGy6PL8uk7K4NXCRHjnt_JV-OwoMN4MnJ1cXwtvD1lZNUnGL2U_EW-yNWANGzz57G_aY5uYRos9DMcFLc8mxQ7LXDz1z2IwYNDL2eqtyVROUIcAtZcT4sYszqvTTpTBuEwEe905gHLRuFJwLccvmXHruN9hwcxDTkDk_fLqI8eym6lwD9zjPT45_lWDTnvHuiAVxgEatLeiAr9-X4KUma9obs8lwEzVjGcK8XuW14ElmIy0cxGSwJ2anH684JoHRibXEq3RPNkNFUv7uYLfxMAJiEDIryz2AUBvLM--DrMt_K2tPCeWew7wQ1ghCNPL7cBXIhAa5hA2-ipiVbEioaFY7J0c6dhTNX7u1r32fPy2soGu7TghxtyvXFaCMjjeoCcfLHZhhJmyIGXYMGtJpLGT17-v9-SOBHFVxdVD4cdw-fHuvkhyMq-lOPaRenT_zYTpXIFP8YjRAJpx9M-Nbl7PDunxob6zargSosubXANhbamjXkuqdp3s1-h5gtVX_-bO4UNX4zqQRObsYT8OR3pZEgmzXvZF3JQpyLEt_2nM0HyJgiReVKHqRAOMB0FosgRPrgL85yPQKDlWXuyRpU9LE6yKu41Pp149I12J90pMcx7m95aDxNtRROW9vASNeIHdoEGxpnxnzDP4V0cpO6XeEZ24z2UGDMX-G1eN-Tv7oHq03RppZSPy26_Szx66UQPRMxvww-R1DQBn4GNe6Pcd1eErgTVZz8edtCTVCV8viNx_7ChkTq5epfdR-L2NO8Gzr89cEXw6I6hPmas7IfhMtZKg" nonce="05fb977167c8d199ba0cdab4dede9266" charset="UTF-8"></script><script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=Zrm5poqWgBMnS4nIXVR_pqJ9O9Kzg9ld3-uRPDu8zbIiobv3ww66fbRkNzpp2siP_DGziEXQ0xHsLXQEI_TozcgjxdVFs8CjY2vaRIYCeLoc6x8HQNmnGmD2-jGUHZLGduxi31q-KuSv3_KKBkTmwLnJoRR74EqZjqQqwyZFC1zRHrOR3kWI5rY9Mw9cQ3-cUuZ8Rk_thqjHdiyENHhZVu1g1K0MpANRVsbSqr6vPTldmoNHAU2S0UJdRtEfikUIyfqze1vDUPpyPZkmecOcblYyIahsEzT4u5ETTRoe_phvCJ-fXvOTeGeB-RFxCpVUjrK_U-ZksHLu9qmcyZ8SnTAz2pPNZNGHgX2MpZqlJA0EiJJRUolrulUVE6uyWw7SyU_VwTPnRSBiAL8P2k7KlIeZFkkc1sI7HbUvhVJ-gARufWoIquatRKdKo00M5fFEVCGB3CmhxVFNlG0-dw3KNBD-6VpL7oQspUUPQ5OqU1FVRGnHkq9IwMgo4-1Te8mxoLyCSokb2ezX6qSKUZv2532hSHynBr5WnvHNfIcBnFWCGk61BmR2-v56NTrOJw_tcIEsmxlF9WY3yTkpH5hPr4JYH21WVDUudmHtZM2qmPxbtLj1BzrOtLq9N3t2xqs4pq2IFb-gaPTOGw86bvOQBvGqdcXSSzG4cyuL87aPvNrxbQWAmxUz7AKZRObLOYkfwbvOnRFD4U5_oKDIk3ix8vjfyKMJYweNDjelHqHPrGVda1ymh1ONO_RzXAPnd1V6J8qnuJ_gZxQEGktcl8x90ourGFICoez8Glzg7K5R30VWDckX2fIEK1l4tPejqmPM0X_2BbNAyYKskC1QVslDd6P3RDm3roo5_EicQnTm340aJSowRdVz0WwOMxDEiU7jCjlpvQpSum5_pl1IAf7lU-HsBdmW438j2MuWhfArZRnCmoWIxygXO9Ebo_d1mdTlQSLXI1QACym1h0HGBsou3S9Hr-9-Sf5GQGYYC8iV2qAH1UHe-H5w-fs4i00pfywYuxKEVoq-7baodou4hiVWkCSCKZqJWi7AJd9jjUfAzCD6Vv5hVMtkA3bInrxsH22f_WccT_sE4xSsU1KMCw1mPUfQ9Ftmx7374hXTe-XgsYOXlfLST2M_Rot5nZXeREAxhZdGLAACtvKlYq2xNSskIL7xKPVlyUARkbVTAMkGut2QjRt1-IoL7oQJLquK_JVuHjV-peYJNpG-xDKb5lY0wffS31gcVv3UZEpUUo5ykuW-DPAfVbIOYZshddS0YWNk_etkShj6cuG8Gl1dpj0UcMeEmhAgqX5YIwvvtDS8_a2YPcp4B8UNlHcvDUmvFfWd7nrQmXEuyOmFehJMUvTSVW9dqEV6URnAJr4btt0PoMZfrKn2-Yo0LPibtjSNB8tXY3kq68yQ-craZYTTWu2s9VCOY7PMr9fSoTeU4_gfN9X5J3JIo4fJw73CHs3R2Lu78L8syR1gXZdums1S5dwTWLAbpUxUns_Oj_Hp0S5Uq5rjfxjUsOrmJCw_dZDj3unCsj-BT6MQRUWgKn8zGjMZqVHFux4ZY7-WYrs8L8SxbmpLUHUBCOPur8aBFawxH9n9bFqLdenTY3G8T-MkdW69TXeNW2l1eGIQNR4giCR2Lh_L0m5uKufvWyLiWauLRYqKhrJFVYQRI9nPHafqdW9AkHAkv8lWCu3mvkqRvVoc4Nv54CUvr8XGrHuVdzdqbRiH" nonce="25efb573ec754e43cb7fd3175d719813" charset="UTF-8"></script><script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=xg8BxQF9E3pLl-_DdfzXSvbK2FBnFo-uVL4tItvz3aSq7dzVo5cLFpEDbmy87RkNn-lXDLY6QA-qD5kYaDBXlmIjacEAGBVQ9M5vZvKMSuG36VB1yuC37_FTxFyFbF3tUB8tTwNWksizt8WfJ9FRvto7Z3aKjlwBYlc7-3bzLssWObMVeZDNx1skqi3E5uexT-AjwnblpDkhwbj8Fy1gG4Z-dU95YL7XnxfxyC1WnuUtX_q5SXePcGWS1ReIMiM8Vwvx5NgZxBtJyP5Mxs9QoIhCuH5bPmpcR7h4Tzgt9Gss2J8Ep3QQ0QUY6ZTw6S2e9Gmay2M2AwUZCE7NnndfXQ8jqC1ffjr2_vlh40quFmJARXx2K39wW3Eu4mYpaoyyYw17_zVcZtpS0MiAszubdPGkW0E1CmFWUp_Xy64FA_gxRvwkpaR7tzCwrybRGTUKwIeghZ_HV0lAB5ziAtQJ1g6-IrsJZK2dp_HRX35jWGFGhrz3ffMtflFnVgFPzpdA2emxAX_H_a2ri30pe7sqogRV3xjZ5EdDr4iTg6rvbF8X13Hq4fITCirVx5uJgqoTNlLu_OjefAN54S1x6uFCcvsG7UdJ7GkUSN_lWXUOyK-kndludUbNoHUJviC88MIa-wsP7rUp1FiGnZPJ4-6u8gNlQuzTOVqTVoEAvDlun2TwZoV6I7yN_0Apq00sQi4xYmAQT6-2UkTWSQTcbeCbt3jXxt4ue7jXDdyGWrIu9VKQWYszXX903Gnm-a0bm7vChHIDdCWYdBNrX8H37CZ-hIgKC2FO3hhswpMvkvGbwa2sy4VXbNFCpzqsmWPSAO6JUhDErLLA9xEBLvKdJkAdJTURbYDkce1af-E-6tpJjHMcoJbq8c0ZePs0970NOofpPB9O5VCtGovJpjTk-EvZLfYcH78WTqjiNN8Uz26QoNk1KFqG5Rn8kbAIl44afk9rNgkio03tTG5nLUNRgZrhywisrbbufR5tXqXIin9msMvZ8qc7F7OEIQ-48wsayweo0FekoXCcRW9lKC_7DGGl_FH2pBxCTRzuyY8mGVLrEKG7-7-3oXJDVWZIakTP_unhva11tP24soA_3ForGAWXhtLTApD69b5BZcuFY-3PrOKl1D03HcclTymJMqp-H-qh0rwvxoewaT8GP8GvEDV9i2jHZ8uNLjH7n8wjYoGrYCPd_rLPRp9DdpHFXY_8JpJMvf-DS0HbX3JDhm7xCQXAnSxb_sH3D95lNQVIOUJZ6AEzkA4Ie8enDTqm326KY3UopifRuLtp-JvmaoIN96D8v4h0_5FVpIsRjSlTWMmjEUiZnijNVYRg5NDK9ctFuFUARHUd4xeUnpjx3GprGysXgREPF8-d_yuGjgEVLZHexDT90BNHVSTF06UHsWXamkTxtfwaS1f7hsT1YA5WM9YfNkdwnfRiRUpb_7AMi7TEmhd3mk9QuEMX_drvDJOLmloEHTyMdwM8GGXHgvdoMtYu4wY-HehRxelnUY8320wOIHGa9gJR6LrO7oiXuWi5fk-R0DYVDKON6SW6OtRXuZZNxsXFDjRO4ayxJNcmh3a1F6GmMHpxcrWxGllyRWF6sPaPbqN18hN0bMyc1HboXmpDPilbj4wmK018MIksWNbHMQK-E6B9_NbA36ZsZC0CADjbNhW9mVsbD7poNCThIsDGog" nonce="2aeb811861d9308219e705e0847abd73" charset="UTF-8"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+      <style>
+      a:hover {
+  background-color: rgb(183, 186, 187);
+}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: white;
+        }
+          .container{
+          cursor:pointer;
+          display: inline-block;
+        }
+
+        .navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 5px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar a:hover {
+  background-color: #9e9292;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+.navbar{
+          padding:5px;
+        }
+.blink{
+  color: red;
+  animation: blinker 1.5s linear infinite;
+  font-family: sans-serif;
+  font-size: 24px;
+}
+@keyframes blinker {
+                100% {
+                    opacity: 0;
+                }
+              }
+            div.flex-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(220, 226, 233);
+}
+
+.flex-container >div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+            .placed{
+              display: flex;
+              top:600px;
+              text-align: center/top;
+            }
+            
+            .place {
+            background-color: whitesmoke;
+            height: 180px;
+            display: inline-block;
+            color: rgb(22, 22, 19);
+            font-family: 'Times New Roman', Times, serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-shadow: 2px 2px 4px rgba(223, 229, 231, 0.7);  
+            }
+            .place a:hover{
+                background-color:rgb(219, 202, 202);
+                top:right;
+            }
+        
+        .p{
+          text-align: center;
+        }
+        .foot{
+          background-color: #4b4747;
+        }
+        .footer{
+            float: right;
+            display: flex;
+            height: 280px;
+            width:320px;
+        }
+        .para{
+            text-align: center/left;
+            color:rgb(227, 229, 233);
+            margin: right;
+            text-shadow: #7e7a7a;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: larger;
+        }
+</style>
+</head>
+<body>
+    <marquee class="blink">
+      <b>TODAY'S DEAL</b>
+    </marquee>
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <div class="navbar">
+        <a class="navbar-brand" href="#">iCoder</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="index.html"><i class="fa fa-fw fa-home" style="font-size:24px"></i> Home</a> 
+            </li>
+            <li class="nav-item">
+              <a class="active" href="products.html"><i class="fa fa-shopping-bag" style="font-size:24px"></i> products</a> 
+            </li>
+              <li class="nav-item">
+                <a href="about.html"><i class="fa fa-fw fa-users" style="font-size:24px"></i>About</a>
+                </li>
+            <li class="nav-item">
+              <a href="customerservice.html"><i class="fa fa-fw fa-envelope" style="font-size:24px"></i> customer service</a>
+            </li>
+            <li class="nav-item">
+              <a href="signup.html" class="btn btn-danger"><i class="fa fa-fw fa-user-circle " style="font-size:20px"></i>Signup</a>
+            </li><br>
+            <li class="nav-item">
+              <a href="login.html"><i class="fa fa-fw fa-user" style="font-size:24px"></i> Login</a>
+              </li> 
+              <li class="nav-item">
+                <a href="cart.html" class="btn btn-primary btn-sm" style="font-size:15px"><i class="fa fa-shopping-cart"></i>
+                  <span class="glyphicon glyphicon-shopping-cart" style="font-size:12px"></span> Shopping Cart
+                </a>
+              </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="text" placeholder="Search">
+            <button class="btn btn-primary" type="button">Search</button>
+          </form>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </nav>
+    <marquee class="blink" width="100%" direction="right" behavior="scroll"  scrollamount="12">
+      <b>THE SALE IS LIVE NOW!🚀</b> 
+  </marquee>
+    <div class="container-fluid" class="embed-responsive embed-responsive-16by9">
+      <div class="row">
+      <video autoplay muted loop class="embed-responsive-item" id="autovid" height="80%" width="100%" >
+          <source src="videos/banner2.mp4" type="video/mp4">
+      </video>
+      </div>
+    </div>
+    <div class="container my-4">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <!-- Smartphone Card -->
+    <div class="col">
+      <div class="card h-100">
+          <img src="images/oneplus.PNG" alt="Product 1" style="height: 300px; object-fit: cover; width: 100%;">
+          <div class="card-body">
+            <p><b>Kratos Legend Prime Mini Wireless Powerbank 10000mAh 15W <small>22.5 Wired Output Compatible with iPhone 12 & Above & Other QI Enabled Devices (Black)</small></b></p>
+            <p><b><sup>₹</sup>1,499</b> <del>₹3,999</del></p>
+            <p>⭐⭐⭐⭐</p>
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Ratings</button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">1 Star</a></li>
+              <li><a class="dropdown-item" href="#">2 Star</a></li>
+              <li><a class="dropdown-item" href="#">3 Star</a></li>
+              <li><a class="dropdown-item" href="#">4 Star</a></li>
+              <li><a class="dropdown-item" href="#">5 Star</a></li>
+            </ul>
+            <button type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown">Quantity</button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">1</a></li>
+              <li><a class="dropdown-item" href="#">2</a></li>
+              <li><a class="dropdown-item" href="#">3</a></li>
+              <li><a class="dropdown-item" href="#">4</a></li>
+              <li><a class="dropdown-item" href="#">5</a></li>
+            </ul>
+            <hr>
+            <a class="buynow" href="buynow.html"><button>Buy now</button></a>
+            <a class="add-to-cart" href="cart.html"><button>Add to Cart</button></a>
+          </div>
+        </div>
+      </div>
+
+    <!-- Product 2 -->
+   <div class="col">
+      <div class="card h-100">
+          <img src="images/cover.PNG" alt="Product 2" style="height: 300px; object-fit: cover; width: 100%;">
+          <div class="card-body">
+            <p><b>POCO C61 Mystical Green 4GB RAM 64GB ROM</b></p>
+            <p><b><sup>₹</sup>5,999</b><del>₹7,999</del></p>
+            <p>⭐⭐⭐⭐</p>
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Ratings</button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">1 Star</a></li>
+              <li><a class="dropdown-item" href="#">2 Star</a></li>
+              <li><a class="dropdown-item" href="#">3 Star</a></li>
+              <li><a class="dropdown-item" href="#">4 Star</a></li>
+              <li><a class="dropdown-item" href="#">5 Star</a></li>
+            </ul>
+            <button type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown">Quantity</button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">1</a></li>
+              <li><a class="dropdown-item" href="#">2</a></li>
+              <li><a class="dropdown-item" href="#">3</a></li>
+              <li><a class="dropdown-item" href="#">4</a></li>
+              <li><a class="dropdown-item" href="#">5</a></li>
+            </ul>
+            <hr>
+            <a class="buynow" href="buynow.html"><button>Buy now</button></a>
+            <a class="add-to-cart" href="cart.html"><button>Add to Cart</button></a>
+          </div>
+        </div>
+      </div>
+
+    <!-- Product 3 -->
+    <div class="col">
+      <div class="card h-100">
+          <img src="images/poco.PNG" alt="Product 3" style="height: 300px; object-fit: cover; width: 100%;">
+          <div class="card-body">
+            <p><b>POCO C61 Mystical Green 4GB RAM 64GB ROM</b></p>
+            <p><b><sup>₹</sup>14,999</b><del>₹16,999</del></p>
+            <p>⭐⭐⭐⭐</p>
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Ratings</button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">1 Star</a></li>
+              <li><a class="dropdown-item" href="#">2 Star</a></li>
+              <li><a class="dropdown-item" href="#">3 Star</a></li>
+              <li><a class="dropdown-item" href="#">4 Star</a></li>
+              <li><a class="dropdown-item" href="#">5 Star</a></li>
+            </ul>
+            <button type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown">Quantity</button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">1</a></li>
+              <li><a class="dropdown-item" href="#">2</a></li>
+              <li><a class="dropdown-item" href="#">3</a></li>
+              <li><a class="dropdown-item" href="#">4</a></li>
+              <li><a class="dropdown-item" href="#">5</a></li>
+            </ul>
+            <hr>
+            <a class="buynow" href="buynow.html"><button>Buy now</button></a>
+            <a class="add-to-cart" href="cart.html"><button>Add to Cart</button></a>
+          </div>
+        </div>
+      </div>
+         <div class="col">
+      <div class="card h-100">
+              <img src="images/0.jpg" alt="Product 1">
+              <div class="card-body">
+               <p><b></small>Both earpieces support IP55 waterproof and dustproof.<br>
+            24hrs Long-time Playback </b></p>
+               <p><b><sup>₹</sup>3,999</b><del>₹4,899</del></p>
+               <p>⭐⭐⭐⭐</p>
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Ratings</button>
+            <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">1 Star</a></li>
+            <li><a class="dropdown-item" href="#">2 Star</a></li>
+            <li><a class="dropdown-item" href="#">3 Star</a></li>
+            <li><a class="dropdown-item" href="#">4 Star</a></li>
+            <li><a class="dropdown-item" href="#">5 Star</a></li>
+            </ul>
+           
+            <button type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown">Quantity</button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">1</a></li>
+                    <li><a class="dropdown-item" href="#">2</a></li>
+                    <li><a class="dropdown-item" href="#">3</a></li>
+                    <li><a class="dropdown-item" href="#">4</a></li>
+                    <li><a class="dropdown-item" href="#">5</a></li>
+                  </ul>
+                  <hr>
+                  <a class="buynow" href="buynow.html"><button>Buy now</button></a>
+          <a class="add-to-cart" href="cart.html"><button>Add to Cart</button></a>
+                  </div>
+                </div>
+              </div>
+         <div class="col">
+      <div class="card h-100">
+              <img src="images/1.jpg" alt="Product 1">
+              <div class="card-body">
+                <p><b></small>Soundcore By Anker Life Q30 Hybrid Active Noise Cancelling
+                  Bluetooth Headphones With Multiple Modes.</b></p>
+               <p><b><sup>₹</sup>6,999</b><del>₹8,999</del></p>
+               <p>⭐⭐⭐⭐</p>
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Ratings</button>
+            <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">1 Star</a></li>
+            <li><a class="dropdown-item" href="#">2 Star</a></li>
+            <li><a class="dropdown-item" href="#">3 Star</a></li>
+            <li><a class="dropdown-item" href="#">4 Star</a></li>
+            <li><a class="dropdown-item" href="#">5 Star</a></li>
+            </ul>
+            <button type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown">Quantity</button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">1</a></li>
+                    <li><a class="dropdown-item" href="#">2</a></li>
+                    <li><a class="dropdown-item" href="#">3</a></li>
+                    <li><a class="dropdown-item" href="#">4</a></li>
+                    <li><a class="dropdown-item" href="#">5</a></li>
+                  </ul>
+                  <hr>
+                  <a class="buynow" href="buynow.html"><button>Buy now</button></a>
+          <a class="add-to-cart" href="cart.html"><button>Add to Cart</button></a>
+                  </div>
+                </div>
+              </div>
+                <div class="col">
+      <div class="card h-100">
+                    <img src="images/2.jpg" alt="Product 1">
+                    <div class="card-body">
+                      <p><b></small>TXOR Stan, 10W IPX5 Bluetooth Speaker with TWS, 
+                        Dynamic Powerful Bass and 1200 mAh Battery.</b></p>
+                      <p><b><sup>₹</sup>969</b><del>₹1299</del></p>
+                      <p>⭐⭐⭐⭐</p>
+                      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Ratings</button>
+                  <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">1 Star</a></li>
+                  <li><a class="dropdown-item" href="#">2 Star</a></li>
+                  <li><a class="dropdown-item" href="#">3 Star</a></li>
+                  <li><a class="dropdown-item" href="#">4 Star</a></li>
+                  <li><a class="dropdown-item" href="#">5 Star</a></li>
+                  </ul>
+                  <button type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown">Quantity</button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">1</a></li>
+                          <li><a class="dropdown-item" href="#">2</a></li>
+                          <li><a class="dropdown-item" href="#">3</a></li>
+                          <li><a class="dropdown-item" href="#">4</a></li>
+                          <li><a class="dropdown-item" href="#">5</a></li>
+                        </ul>
+                        <hr>
+                        <a class="buynow" href="buynow.html"><button>Buy now</button></a>
+                <a class="add-to-cart" href="cart.html"><button>Add to Cart</button></a>
+                        </div>
+                      </div>
+                    </div>
+      <div class="col">
+      <div class="card h-100">
+          <img src="images/3.jpg" alt="Product 1">
+          <div class="card-body">
+            <p><b></small>A great travel companion, sufficient for daily use;
+              Charge Redmi Note 7 3.5 times, Mi 9T 3.5 times.</b></p>
+            <p><b><sup>₹</sup>3,499</b> <del>₹5,000</del></p>
+            <p>⭐⭐⭐⭐</p>
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Ratings</button>
+        <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">1 Star</a></li>
+        <li><a class="dropdown-item" href="#">2 Star</a></li>
+        <li><a class="dropdown-item" href="#">3 Star</a></li>
+        <li><a class="dropdown-item" href="#">4 Star</a></li>
+        <li><a class="dropdown-item" href="#">5 Star</a></li>
+        </ul>
+        <button type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown">Quantity</button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">1</a></li>
+                <li><a class="dropdown-item" href="#">2</a></li>
+                <li><a class="dropdown-item" href="#">3</a></li>
+                <li><a class="dropdown-item" href="#">4</a></li>
+                <li><a class="dropdown-item" href="#">5</a></li>
+              </ul>
+              <hr>
+              <a class="buynow" href="buynow.html"><button>Buy now</button></a>
+      <a class="add-to-cart" href="cart.html"><button>Add to Cart</button></a>
+              </div>
+            </div>
+          </div>
+<div class="col">
+      <div class="card h-100">
+          <img src="images/4.jpg" alt="Product 1">
+          <div class="card-body">
+            <p><b></small>EGrapco Type C 1 m 120W Type-C Superfast Charging Cable Data & Sync Usb Cable
+              (Compatible with Universal Smartphones)</b></p>
+          <p><b><sup>₹</sup>299</b> <del>₹599</del></p>
+          <p>⭐⭐⭐⭐</p>
+          <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Ratings</button>
+        <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">1 Star</a></li>
+        <li><a class="dropdown-item" href="#">2 Star</a></li>
+        <li><a class="dropdown-item" href="#">3 Star</a></li>
+        <li><a class="dropdown-item" href="#">4 Star</a></li>
+        <li><a class="dropdown-item" href="#">5 Star</a></li>
+        </ul>
+        <button type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown">Quantity</button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">1</a></li>
+                <li><a class="dropdown-item" href="#">2</a></li>
+                <li><a class="dropdown-item" href="#">3</a></li>
+                <li><a class="dropdown-item" href="#">4</a></li>
+                <li><a class="dropdown-item" href="#">5</a></li>
+              </ul>
+              <hr>
+              <a class="buynow" href="buynow.html"><button>Buy now</button></a>
+      <a class="add-to-cart" href="cart.html"><button>Add to Cart</button></a>
+              </div>
+            </div>
+          </div>
+      <div class="col">
+      <div class="card h-100">
+          <img src="images/5.jpg" alt="Product 1">
+          <div class="card-body">
+            <p><b></small>(Refurbished) Fitbit FB507BKBK Versa 2 Health & Fitness 
+              Smartwatch with Heart Rate, Music, Alexa Built-i</b></p>
+            <p>⭐⭐⭐⭐</p>
+            <p style="color:#3e8e41">Currently Unavailalable</p>
+            <p><b><small>We don't know when or if this item will be back in stock.</small></b></p>
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Ratings</button>
+          <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">1 Star</a></li>
+          <li><a class="dropdown-item" href="#">2 Star</a></li>
+          <li><a class="dropdown-item" href="#">3 Star</a></li>
+          <li><a class="dropdown-item" href="#">4 Star</a></li>
+          <li><a class="dropdown-item" href="#">5 Star</a></li>
+          </ul>
+          <button type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown">Quantity</button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">1</a></li>
+            <li><a class="dropdown-item" href="#">2</a></li>
+            <li><a class="dropdown-item" href="#">3</a></li>
+            <li><a class="dropdown-item" href="#">4</a></li>
+            <li><a class="dropdown-item" href="#">5</a></li>
+          </ul>
+          <hr>
+          <a class="buynow" href="buynow.html"><button>Buy now</button></a>
+      <a class="add-to-cart" href="cart.html"><button>Add to Cart</button></a>
+              </div>
+            </div>
+          </div>
+      <div class="col">
+      <div class="card h-100">
+          <img src="images/6.jpg" alt="Product 1">
+          <div class="card-body">
+            <p><b></small>It’s the ultimate device for a healthy life!</b></p>
+            <p><small>The Apple Watch Series 10 features advanced health monitoring,
+               including water temperature sensing. </small></p>
+            <p><b><sup>₹</sup>18,900</b> <del>₹21,900</del></p>
+            <p>⭐⭐⭐⭐</p>
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Ratings</button>
+          <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">1 Star</a></li>
+          <li><a class="dropdown-item" href="#">2 Star</a></li>
+          <li><a class="dropdown-item" href="#">3 Star</a></li>
+          <li><a class="dropdown-item" href="#">4 Star</a></li>
+          <li><a class="dropdown-item" href="#">5 Star</a></li>
+          </ul>
+          <button type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown">Quantity</button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">1</a></li>
+                  <li><a class="dropdown-item" href="#">2</a></li>
+                  <li><a class="dropdown-item" href="#">3</a></li>
+                  <li><a class="dropdown-item" href="#">4</a></li>
+                  <li><a class="dropdown-item" href="#">5</a></li>
+                </ul>
+                <hr>
+                <a class="buynow" href="buynow.html"><button>Buy now</button></a>
+      <a class="add-to-cart" href="cart.html"><button>Add to Cart</button></a>
+              </div>
+            </div>
+          </div>
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <img src="images/7.PNG" alt="Product 1">
+          <div class="card-body">
+            <h1><b>Apple iPhone 15</b></h1>
+            <p><b></small>Dual 48MP camera,
+          Compatible with MagSafe accessories and Qi wireless chargers.</b></p>
+            <p><b><sup>₹</sup>61,499 </b> <del>₹79,900</del></p>
+            <p>⭐⭐⭐⭐</p>
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Ratings</button>
+          <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">1 Star</a></li>
+          <li><a class="dropdown-item" href="#">2 Star</a></li>
+          <li><a class="dropdown-item" href="#">3 Star</a></li>
+          <li><a class="dropdown-item" href="#">4 Star</a></li>
+          <li><a class="dropdown-item" href="#">5 Star</a></li>
+          </ul>
+          <button type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown">Quantity</button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">1</a></li>
+                  <li><a class="dropdown-item" href="#">2</a></li>
+                  <li><a class="dropdown-item" href="#">3</a></li>
+                  <li><a class="dropdown-item" href="#">4</a></li>
+                  <li><a class="dropdown-item" href="#">5</a></li>
+                </ul>
+                <hr>
+                <a class="buynow" href="buynow.html"><button>Buy now</button></a>
+      <a class="add-to-cart" href="cart.html"><button>Add to Cart</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+      <div class="card h-100">
+              <img src="images/8.PNG" alt="Product 1">
+              <div class="card-body">
+                      <p><b></small>Dell KM3322W Wireless USB Keyboard and Mouse Combo,up to 36 Month Battery Life, 3Y Advance Exchange Warranty.</b></p>
+                      <p><b><sup>₹</sup>1,399  </b> <del>₹2,499</del></p>
+                      <p>⭐⭐⭐⭐</p>
+                      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Ratings</button>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">1 Star</a></li>
+                    <li><a class="dropdown-item" href="#">2 Star</a></li>
+                    <li><a class="dropdown-item" href="#">3 Star</a></li>
+                    <li><a class="dropdown-item" href="#">4 Star</a></li>
+                    <li><a class="dropdown-item" href="#">5 Star</a></li>
+                    </ul>
+                    <button type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown">Quantity</button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">1</a></li>
+                            <li><a class="dropdown-item" href="#">2</a></li>
+                            <li><a class="dropdown-item" href="#">3</a></li>
+                            <li><a class="dropdown-item" href="#">4</a></li>
+                            <li><a class="dropdown-item" href="#">5</a></li>
+                          </ul>
+                          <hr>
+                          <a class="buynow" href="buynow.html"><button>Buy now</button></a>
+                <a class="add-to-cart" href="cart.html"><button>Add to Cart</button></a>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
+<div class="container-fluid">
+  <div id="carouselExampleIndicators" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/carousel1.PNG" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Slide 1">
+      </div>
+      <div class="carousel-item">
+        <img src="images/cr1.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Slide 2">
+      </div>
+      <div class="carousel-item">
+        <img src="images/cr2.png" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Slide 3">
+      </div>
+      <div class="carousel-item">
+        <img src="images/cr3.PNG" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Slide 4">
+      </div>
+      <div class="carousel-item">
+        <img src="images/cr4.PNG" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Slide 5">
+      </div>
+      <div class="carousel-item">
+        <img src="images/icr6.avif" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Slide 6">
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+        <div class="footer">
+          <img src="images/Capture.PNG">
+          </div>
+          <section class="foot">
+          <div class="para">
+          <h2 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"><b><center>Expert Support</center></b></h2>
+          <p><small><center>Faulty phone Battery? Slow Laptop?<br>
+            We have in-house tech experts who can assist you.
+          </center></small></p>
+          <p><small><center><u>Visit us in stores!!</u></center></small></p>
+          <p style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"><big><center><u>OUR LOCATIONS</u></center></big></p>
+          <p><small><center>Didwana,Jaipur - 341303.<br>
+           Rajasthan,India. (123) 456 7890 .</center></small></p>
+          </div>
+          </section>
+          <footer class="pt-4 my-md-4 pt-md-4 border-top bg-light">
+            <div class="row">
+              <div class="col-12 col-md">
+                <img class="mb-2" src="images/logo.jpg" alt="" width="40" height="40">
+                <small class="d-block mb-3 text-muted">© 2021-2025, icodersite.com,Inc. or its affiliates</small>
+              </div>
+              <div class="col-6 col-md">
+                <h5>Features</h5>
+                <ul class="list-unstyled text-small">
+                  <li><a class="text-muted" href="#">Cool stuff</a></li>
+                  <li><a class="text-muted" href="#">Random feature</a></li>
+                  <li><a class="text-muted" href="#">Team feature</a></li>
+                  <li><a class="text-muted" href="#">Stuff for developers</a></li>
+                  <li><a class="text-muted" href="#">Another one</a></li>
+                  <li><a class="text-muted" href="#">Last time</a></li>
+                </ul>
+              </div>
+              <div class="col-6 col-md">
+                <h5>Resources</h5>
+                <ul class="list-unstyled text-small">
+                  <li><a class="text-muted" href="#">Resource</a></li>
+                  <li><a class="text-muted" href="#">Resource name</a></li>
+                  <li><a class="text-muted" href="#">Another resource</a></li>
+                  <li><a class="text-muted" href="#">Final resource</a></li>
+                </ul>
+              </div>
+              <div class="col-6 col-md">
+                <h5>About</h5>
+                <ul class="list-unstyled text-small">
+                  <li><a class="text-muted" href="#">Team</a></li>
+                  <li><a class="text-muted" href="#">Locations</a></li>
+                  <li><a class="text-muted" href="#">Privacy</a></li>
+                  <li><a class="text-muted" href="#">Terms</a></li>
+                </ul>
+              </div>
+            </div>
+          </footer>
+    </body>
+</html>
